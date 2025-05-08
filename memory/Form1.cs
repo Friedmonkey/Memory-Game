@@ -204,12 +204,11 @@ namespace memory
                                 (FirstButton as Button).BackgroundImage = Properties.Resources.empty;
                                 (sender as Button).BackgroundImage = Properties.Resources.empty;
                             }
-                            
-                        }
-                        if (chkbxMultiplayer.Checked == true) //if you are playing multiplayer
-                        {
-                            Player1 = !Player1;
-                            turns++;
+                            if (chkbxMultiplayer.Checked == true) //if you are playing multiplayer
+                            {
+                                Player1 = !Player1;
+                                turns++;
+                            }
                         }
                         disableclick = false;
                         break;
